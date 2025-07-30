@@ -19,6 +19,7 @@
     Merci aux clients fidèles.
   ],
   student-suffix: "(e)",
+  gendered-company-tutor: "Maîtresse",
   lang: "fr",
   insa: "rennes",
   doc

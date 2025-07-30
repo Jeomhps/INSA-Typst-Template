@@ -129,10 +129,11 @@ This template can also be used for a report that is written in english: in this 
 | **company-logo** | yes      	| content 	| Logo of the company                                    	| `image("logo-example.png")` |
 | **company-tutor** | yes      	| str     	| Tutor in the company                                   	| `"Marilena VENDITELLI"` |
 | **insa-tutor** | yes      	| str     	| Tutor at INSA                                          	| `"Bertrand COUASNON"` |
-| **insa-tutor-suffix** | no      	| str     	| Suffix at the end of "encadrant" in french         	| `"e"` |
+| **insa-tutor-suffix** | no      	| str     	| Suffix at the end of "encadrant" in French         	| `"e"` |
 | **summary-french** | yes      	| content 	| Summary in French                                      	| `[   Résumé du stage en français. ]` |
 | **summary-english** | yes      	| content 	| Summary in English                                     	| `[   Summary of the internship in english. ]` |
-| **student-suffix** | no       	| str    	| Suffix at the end of "ingénieur" in french            	| `"e"` |
+| **student-suffix** | no       	| str    	| Suffix at the end of "ingénieur" in French            	| `"e"` |
+| **gendered-company-tutor** | no   | str   | Gendered version of "tuteur" or "maître" in French    | `"tutrice"` |
 | **defense-date** | no	| str    	| (ONLY FOR PFE) Date of the defense            	| `"2025-06-12"` |
 | **thanks-page** | no       	| content 	| Special thanks page.                                   	| `[   Thanks to my *supervisor*, blah blah blah. ]` |
 | **omit-outline** | no       	| bool    	| Whether to skip the outline page or not                	| `false` |
@@ -217,6 +218,10 @@ If you have any other feature request, open an issue on the repository.
 The typst template is licensed under the [MIT license](https://github.com/SkytAsul/INSA-Typst-Template/blob/main/LICENSE). This does *not* apply to the image assets. Those image files are property of Groupe INSA.
 
 ## Changelog
+### 0.5.2
+- Adjusted size of texts on the cover of `insa-pfe` and `insa-stage` templates
+- Added `gendered-company-tutor` parameter to the `insa-pfe` and `insa-stage` templates, defaulting to "Tuteur" and "Maître" respectively
+
 ### 0.5.1
 - Added `defense-date` parameter to the `insa-pfe` template
 - "Thanks" and "Autorisation de diffusion du rapport" pages are no longer outlined

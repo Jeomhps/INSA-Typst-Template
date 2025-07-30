@@ -320,9 +320,9 @@
   return insa-document(
     "pfe",
     cover-top-left: [
-      #text(size: 17pt, font: insa-body-fonts, insa-stage-translate("title", lang))\
+      #text(size: 16.5pt, font: insa-body-fonts, insa-stage-translate("title", lang))\
       #text(size: 21pt, font: insa-heading-fonts, weight: "bold", name)\
-      #text(size: 17pt, font: insa-body-fonts)[
+      #text(size: 16.5pt, font: insa-body-fonts)[
         #insa-stage-translate("student", lang, placeholders: ("gender-suffix": student-suffix, "insa": insa-school-name(insa)))\
         #insa-stage-translate("department", lang, placeholders: ("department": department))\
         #year
@@ -505,9 +505,9 @@
   return insa-document(
     "pfe",
     cover-top-left: [
-      #text(size: 17pt, font: insa-body-fonts, insa-stage-translate("title", lang))\
+      #text(size: 16.5pt, font: insa-body-fonts, insa-stage-translate("title", lang))\
       #text(size: 21pt, font: insa-heading-fonts, weight: "bold", name)\
-      #text(size: 17pt, font: insa-body-fonts)[
+      #text(size: 16.5pt, font: insa-body-fonts)[
         #insa-stage-translate("student", lang, placeholders: ("gender-suffix": student-suffix, "insa": insa-school-name(insa)))\
         #insa-stage-translate("department", lang, placeholders: ("department": department))\
         #year
