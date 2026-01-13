@@ -17,7 +17,7 @@
     header: [
       #place(
         left,
-        image("assets/" + insa + "/logo." + if insa == "cvl" { "svg" } else { "png" }, height: 1.28cm),
+        image(insa-logo-path(insa), height: 1.28cm),
         dy: 1.25cm,
       )
       #place(right + bottom)[
