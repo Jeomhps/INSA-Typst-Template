@@ -14,8 +14,31 @@
   let supported-insas = (
     "rennes": "Rennes",
     "hdf": "Hauts-de-France",
-    "cvl": "Centre Val de Loire"
+    "cvl": "Centre Val de Loire",
   )
-  assert(supported-insas.keys().contains(id), message: "Only INSAs " + supported-insas.keys().join(", ") + " are supported for now.")
+  assert(
+    supported-insas.keys().contains(id),
+    message: "Only INSAs " + supported-insas.keys().join(", ") + " are supported for now.",
+  )
   return supported-insas.at(id)
+}
+
+/// Returns the path to the INSA logo for the given school identifier.
+///
+/// - id (str): the short name of the school (rennes, hdf or cvl)
+/// -> str
+#let insa-logo-path(id) = {
+  let supported-insas = (
+    "rennes": "Rennes",
+    "hdf": "Hauts-de-France",
+    "cvl": "Centre Val de Loire",
+  )
+  assert(
+    supported-insas.keys().contains(id),
+    message: "Only INSAs " + supported-insas.keys().join(", ") + " are supported for now.",
+  )
+
+  let base-path = "assets/" + id + "/logo."
+  let extension = if id == "cvl" { "svg" } else { "png" }
+  return base-path + extension
 }

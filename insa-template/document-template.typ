@@ -206,7 +206,7 @@
     },
     header: {
       if page-header == none {
-        image("assets/" + insa + "/logo." + if insa == "cvl" { "svg" } else { "png" }, width: 4.68cm)
+        image(insa-logo-path(insa), width: 4.68cm)
       } else if page-header != [] {
         page-header
         line(length: 100%)
