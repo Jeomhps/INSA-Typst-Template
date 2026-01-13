@@ -34,7 +34,7 @@
     "cvl": "Centre Val de Loire",
   )
   assert(
-    supported-insas.contains(id),
+    supported-insas.keys().contains(id),
     message: "Only INSAs " + supported-insas.keys().join(", ") + " are supported for now.",
   )
 
